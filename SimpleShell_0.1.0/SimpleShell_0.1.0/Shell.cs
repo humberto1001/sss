@@ -36,6 +36,11 @@ namespace SimpleShell_0._1._0
             string line;
             string[] arguments;
 
+            // Set the console color setting
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+
             do
             {
                 Console.Write("~$ ");

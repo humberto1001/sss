@@ -6,6 +6,15 @@ using System.IO;
 // the shell.AddCommand() and the first parameter is the function name
 // in other words how it will be invoked or is recognized and the next parameter
 // is the function which must take in a type of argument
+//
+// TODO: 
+//
+// Make commands objects so we can pass the ToString functions as the 
+// description of it and that way a help command will just list all of them
+// using ToString()
+//
+// Simplify the system of taking arguments
+// Allow mulstiple kinds of armuents
 namespace SimpleShell_0._1._0
 {
     class Program
