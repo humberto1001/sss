@@ -39,7 +39,9 @@ namespace SimpleShell_0._1._0
             // Set the console color setting
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("Welcome to the Super Simple Shell!\n");
+            Console.Write("Enter 'help' to see list of commands.\n\n");
 
             do
             {
