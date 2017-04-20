@@ -59,6 +59,20 @@ namespace SimpleShell_0._1._0
             Console.Clear();
             return 1;
         }
+        //Function for help command. ~Josh
+        public static int lsh_Help(string[] arguments)
+        {
+            Console.Write("cd = change directory\nls = list directory\nmd = create new folder directory\n"+
+                          "clear = clears the console\nexit = exits the shell\n");
+            return 1;
+        }
+        //Function for creating new folder command. ~Josh
+        public static int lsh_CreateFolder(string[] arguments)
+        {
+            var dir = @"C:\Downloads\TestSSS";
+            Directory.CreateDirectory(dir);
+            return 1;
+        }
 
         static void Main(string[] args)
         {
@@ -67,6 +81,8 @@ namespace SimpleShell_0._1._0
             shell.AddCommand("exit", lsh_exit);
             shell.AddCommand("cd", lsh_CD);
             shell.AddCommand("clear", lsh_Clear);
+            shell.AddCommand("help", lsh_Help);
+            shell.AddCommand("md", lsh_CreateFolder);
 
             shell.Init();
         }
